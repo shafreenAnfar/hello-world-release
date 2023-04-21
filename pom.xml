@@ -4,7 +4,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>hello-world-test</artifactId>
-    <version>1.3-SNAPSHOT</version>
+    <version>1.4-SNAPSHOT</version>
 
     <build>
         <pluginManagement>
@@ -47,6 +47,22 @@
             <!-- <url>http://localhost:8081/repository/maven-snapshots/</url> -->
         </snapshotRepository>
     </distributionManagement>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <distributionManagement>
+                <repository>
+                    <id>my-releases-repo</id>
+                    <url>http://localhost:8081/nexus/content/repositories/releases/</url>
+                </repository>
+                <snapshotRepository>
+                    <id>my-snapshots-repo</id>
+                    <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
+    </profiles>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
