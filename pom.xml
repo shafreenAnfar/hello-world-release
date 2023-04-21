@@ -91,7 +91,7 @@
                         <configuration>
                             <serverId>nexus-releases</serverId>
                             <nexusUrl>http://localhost:8081/nexus/</nexusUrl>
-                            <skipStaging>true</skipStaging>
+<!--                            <skipStaging>true</skipStaging>-->
                         </configuration>
                     </plugin>
                 </plugins>
