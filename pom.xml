@@ -60,8 +60,8 @@
     <distributionManagement>
         <repository>
             <id>nexus-releases</id>
-<!--             <url>http://localhost:8081/nexus/content/repositories/releases/</url>-->
-            <url>http://localhost:8081/nexus/service/local/staging/deploy/maven2/</url>
+             <url>http://localhost:8081/nexus/content/repositories/releases/</url>
+<!--            <url>http://localhost:8081/nexus/service/local/staging/deploy/maven2/</url>-->
         </repository>
         <snapshotRepository>
             <id>nexus-snapshots</id>
