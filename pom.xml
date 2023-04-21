@@ -4,7 +4,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>hello-world-test</artifactId>
-    <version>1.7-SNAPSHOT</version>
+    <version>1.8-SNAPSHOT</version>
 
     <build>
         <pluginManagement>
@@ -15,6 +15,25 @@
                     <version>2.8.2</version>
                     <configuration>
                         <skip>true</skip>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.sonatype.plugins</groupId>
+                    <artifactId>nexus-staging-maven-plugin</artifactId>
+                    <version>1.6.6</version>
+                    <executions>
+                        <execution>
+                            <id>default-deploy</id>
+                            <phase>deploy</phase>
+                            <goals>
+                                <goal>deploy</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <serverId>nexus</serverId>
+                        <nexusUrl>http://localhost:8081/nexus/</nexusUrl>
+                        <skipStaging>true</skipStaging>
                     </configuration>
                 </plugin>
                 <plugin>
