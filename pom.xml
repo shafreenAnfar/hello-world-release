@@ -4,7 +4,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>hello-world-test</artifactId>
-    <version>1.33-SNAPSHOT</version>
+    <version>1.33</version>
 
     <build>
 <!--        <pluginManagement>-->
@@ -67,7 +67,7 @@
         <connection>scm:git:https://github.com/shafreenAnfar/hello-world-release.git</connection>
         <developerConnection>scm:git:https://github.com/shafreenAnfar/hello-world-release.git</developerConnection>
         <url>https://github.com/shafreenAnfar/hello-world-release.git</url>
-        <tag>HEAD</tag>
+        <tag>v1.33</tag>
     </scm>
 
     <distributionManagement>
